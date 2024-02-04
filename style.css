@@ -1,0 +1,81 @@
+body {
+    background-color: wheat !important;;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    font-family: 'SF Mono' !important;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    /* border: 2.5px solid black; */
+}
+
+@media (min-width: 700px) {
+    .main {
+        width: 80vw;
+    }
+
+    .main p {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .main {
+        width: 100vw;
+    }
+
+    .main p {
+        font-size: 22px;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 25px;
+    width: 100px;
+    height: 60px;
+    
+    margin: auto 40px;
+    /* margin: auto; */
+    
+    border-radius: 10px;
+}
+
+.button-area {
+    display: flex;
+    height: 150px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    
+    /* border: 1px solid black; */
+}
+
+.gif {
+    width: 130px;
+    height: 130px;
+    animation: playSpriteAnimation 2s steps(19) infinite;
+}
+
+@keyframes playSpriteAnimation {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2470px 0; /* Điều chỉnh -1000px tùy thuộc vào kích thước và số lượng hình ảnh trong sprite */
+    }
+}
