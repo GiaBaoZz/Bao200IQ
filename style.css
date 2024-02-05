@@ -8,6 +8,8 @@ body {
     height: 100vh;
     font-family: 'SF Mono', sans-serif !important;
     /* font-family: 'SF Mono' !important; */
+
+    width: 100vw;
 }
 
 
@@ -78,6 +80,8 @@ body {
     width: 100vw;
     align-items: center;
     justify-content: center;
+
+    max-width: 100%;
     
     /* border: 1px solid black; */
 }
