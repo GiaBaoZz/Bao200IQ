@@ -43,6 +43,8 @@ body {
 
     .main p {
         font-size: 22px;
+        text-align: center;
+        margin: 0px 30px;
     }
 
     .popup {
@@ -69,6 +71,7 @@ body {
     
     border-radius: 10px;
     border: 2px solid black;
+
 }
 
 .button-area {

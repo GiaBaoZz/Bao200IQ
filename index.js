@@ -48,9 +48,17 @@ function clickNo() {
     currentFontSize = getComputedStyle(no).fontSize;
     currentWidth = getComputedStyle(no).width;
     currentHeight = getComputedStyle(no).height;
+
     newFontSize = parseFloat(currentFontSize)/2;
+
     newWidth = parseFloat(currentWidth) - 10;
+
     newHeight = parseFloat(currentHeight) - 10;
+
+    if (newFontSize < 0.001) {
+        no.style.display = "none";
+    }
+
     no.style.fontSize = newFontSize + "px";
     no.style.width = newWidth + "px";
     no.style.height = newHeight + "px";
