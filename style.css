@@ -7,7 +7,6 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'SF Mono', sans-serif !important;
-
     /* font-family: 'SF Mono' !important; */
 }
 
@@ -27,12 +26,30 @@ body {
     .main p {
         font-size: 30px;
     }
+
+    .popup {
+        width: 450px;
+        height: 350px;
+    }
+
+    .popup p {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 700px) {
 
     .main p {
         font-size: 22px;
+    }
+
+    .popup {
+        width: 330px;
+        height: 330px;
+    }
+
+    .popup p {
+        font-size: 25px;
     }
 }
 
@@ -69,6 +86,16 @@ body {
     animation: playSpriteAnimation 2s steps(19) infinite;
 }
 
+#gif-popup {
+    width: 130px;
+    height: 130px;
+    animation: playSpriteAnimation 2s steps(19) infinite;
+
+    
+    
+    
+}
+
 @keyframes playSpriteAnimation {
     from {
         background-position: 0 0;
@@ -80,4 +107,39 @@ body {
 
 .main p {
     font-weight: bold;
+}
+
+.popup p {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.popup {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    display: none;
+
+    z-index: 1;
+    
+
+    border: 1px solid black;
+    border-radius: 20px;
+    position: fixed;
+    background-color: rgb(166, 234, 255);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+
 }

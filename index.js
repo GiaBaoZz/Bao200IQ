@@ -69,10 +69,19 @@ function clickNo() {
 
 function clickYes() {
     
-    let gif = document.getElementById("gif");
+    
+
+    let popup = document.getElementById("popup");
+    popup.style.display = "flex";
+
+    let gif = document.getElementById("gif-popup");
 
     let getGif = happyList[0];
 
     gif.style.backgroundImage = getGif;
 
+    let overlay = document.getElementById("overlay");
+    overlay.style.display = "block";
+    
+    
 }
