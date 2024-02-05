@@ -55,7 +55,7 @@ function clickNo() {
 
     newHeight = parseFloat(currentHeight) - 10;
 
-    if (newFontSize < 0.001) {
+    if (newFontSize < 0.01) {
         no.style.display = "none";
     }
 
