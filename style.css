@@ -6,8 +6,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
-    font-family: 'SF Mono' !important;
+    font-family: 'SF Mono', sans-serif !important;
+
+    /* font-family: 'SF Mono' !important; */
 }
 
 
