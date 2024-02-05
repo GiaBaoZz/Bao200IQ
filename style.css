@@ -49,6 +49,7 @@ body {
     /* margin: auto; */
     
     border-radius: 10px;
+    border: 2px solid black;
 }
 
 .button-area {
@@ -75,4 +76,8 @@ body {
     to {
         background-position: -2470px 0; /* Điều chỉnh -1000px tùy thuộc vào kích thước và số lượng hình ảnh trong sprite */
     }
+}
+
+.main p {
+    font-weight: bold;
 }
